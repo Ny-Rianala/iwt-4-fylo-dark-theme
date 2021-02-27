@@ -1,0 +1,9 @@
+.section {
+    @include centered-container;
+    margin-left: 22px;
+    margin-right: 22px;
+    &__access {
+        padding-bottom: 70px;
+        line-height: 25px;
+    }
+}
