@@ -1,0 +1,21 @@
+.improvement {
+    margin-left: 20px;
+    margin-right: 20px;
+    &__article {
+        background-color: hsl(219, 30%, 18%);
+        padding: 25px 25px;
+        margin-bottom: 30px;
+    }
+    &__article--user {
+        display: flex;
+        flex-direction: row;
+    &--user-name {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    &-image {
+        border-radius: 50%;
+    }
+}
+}
