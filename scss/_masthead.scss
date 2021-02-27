@@ -1,0 +1,22 @@
+.masthead {
+    margin-left: 20px;
+    margin-right: 20px;
+    &__siteheadings {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    &__logo {
+        width: 30%;
+    }
+    &--navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}&__info {
+    @include centered-container;
+    padding-top: 50px;
+    padding-bottom: 130px;
+}
+}
