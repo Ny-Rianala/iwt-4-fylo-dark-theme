@@ -7,3 +7,15 @@
         line-height: 25px;
     }
 }
+
+@media(min-width: 1000px) {
+    .section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    &__access {
+        text-align: center;
+        padding-left: 130px;
+        padding-right: 154px;
+    }
+}
+}

@@ -6,6 +6,12 @@ body {
   background-color: #181f2a;
   color: white; }
 
+main {
+  background-color: #181f2a; }
+
+foote {
+  background-color: #0b1523; }
+
 ul > li {
   list-style: none; }
 
@@ -23,7 +29,6 @@ svg {
   cursor: pointer; }
 
 img {
-  max-width: 100%;
   width: 100%;
   height: auto; }
 
@@ -36,7 +41,7 @@ img {
     justify-content: space-between;
     margin-top: 20px; }
     .masthead__siteheadings__logo {
-      width: 30%; }
+      max-width: 20%; }
     .masthead__siteheadings--navigation {
       display: flex;
       flex-direction: row;
@@ -49,6 +54,19 @@ img {
     padding-top: 50px;
     padding-bottom: 130px; }
 
+@media (min-width: 1000px) {
+  .masthead__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  .masthead__info img {
+    width: 40%; }
+  .masthead__info--container {
+    text-align: center;
+    padding-right: 420px;
+    padding-left: 476px; } }
+
 .section {
   display: flex;
   flex-direction: column;
@@ -60,11 +78,32 @@ img {
     padding-bottom: 70px;
     line-height: 25px; }
 
+@media (min-width: 1000px) {
+  .section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .section__access {
+      text-align: center;
+      padding-left: 130px;
+      padding-right: 154px; } }
+
 .moreInfo {
   margin-left: 20px;
   margin-right: 20px;
   line-height: 25px;
   padding-bottom: 100px; }
+
+@media (min-width: 1000px) {
+  .moreInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .moreInfo--image {
+      max-width: 50%;
+      padding-left: 83px; }
+    .moreInfo--container {
+      padding-right: 199px;
+      padding-left: 224px; } }
 
 .improvement {
   margin-left: 20px;
@@ -82,3 +121,27 @@ img {
       padding-left: 20px; }
     .improvement__article--user-image {
       border-radius: 50%; }
+
+.section-getStart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #1c2431;
+  padding-top: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 80px; }
+
+.footer {
+  margin-left: 20px;
+  margin-right: 20px; }
+  .footer__address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .footer__navigation--about {
+    padding-left: 0; }
