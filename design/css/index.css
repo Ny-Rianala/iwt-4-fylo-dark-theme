@@ -122,6 +122,16 @@ img {
     .improvement__article--user-image {
       border-radius: 50%; }
 
+@media (min-width: 1000px) {
+  .improvement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .improvement__article {
+      margin-right: 20px; }
+      .improvement__article--user-image {
+        width: 60%; } }
+
 .section-getStart {
   display: flex;
   flex-direction: column;
